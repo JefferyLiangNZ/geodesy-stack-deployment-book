@@ -16,6 +16,8 @@
   * Validations
 * [3. Deploy Webservice & GeoServer](deploy-config-and-code-into-webservice-and-geoserver-asg.md)
   * Steps
+    * Compile & build source code 
+    * Adaption of codedeploy code
   * Validations
 * [4. Deploy GNSS-Site-manager and CloudFront](deploy-gnss-site-manager-in-s3-and-config-cloudfront.md)
   * [Steps](deploy-gnss-site-manager-in-s3-and-config-cloudfront/steps.md)
