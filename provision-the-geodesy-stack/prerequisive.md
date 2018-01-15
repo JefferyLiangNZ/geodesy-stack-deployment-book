@@ -33,13 +33,13 @@ It will be used by any AWS Cli commands to authenticate against AWS service endp
 * Amazonia
 * Packer & Terraform
 
-### a**wscli**
+### setup a**wscli**
 
 Installs it first and run aws configured --profile geodesy.
 
 \(details is omitted\)
 
-### **credstash**:
+### **coping geodesy-stack git repo**:
 
 either be installed inside virtualenv or system:
 
@@ -49,25 +49,40 @@ either be installed inside virtualenv or system:
 #if you don't have commit access to GA github, you should fork Geodesy-web-service 
 to your/your organization account first.
 
+# No.1. Clone repo and checkout master
+
 git clone <repo_of_geodesy_web_service>
 cd Geodesy-Web-Services
 git checkout -b master remotes/origin/master (because the default branch is "next")
 # verify it matches all the commits as the remote master branch. i.e. git ls-remote show ...
+# then branch out from master. 
+git checkout -b <new-deploy-branch-name>
 
+# No.2. Merge the hotfix for OpenAM deployment process
 # get hotfix of OpenAM bugs by Lazar.
 git checkout -b openam-fix remotes/origin/determinsitive-fix
+git checkout <new-deploy-branch-name>
+git merge the fix 
+# or git checkout openam-fix -- path/to/changed/file
+
+# No.3 making sure all the rest work are based on <new-deploy-branch-name>
+git checkout <new-deploy-branch-name>
 ```
 
-1. install credstash in virtualenv 
+### install credstash in virtualenv 
 
 **note:** assuming you are using bash; otherwise, zsh/fish needs some alternation\)
 
 ```
 $ cd <Geodesy-Web-Services>/aws
+$ git branch 
+# (result must show you are on the <new-deploy-branch-name>
+
 $ virtualenv -p path/to/python env
 $ source env/bin/activate
 (env) $ pip or pip3 install credstash
 #You might need search google to fix some issues related to Crytography if your credstash is not happy.
+
 $ credstash setup
 ...
 # provide everything the same as you would for "aws configure --profile geodesy"; 
