@@ -8,6 +8,8 @@ Create a IAM user,"geodesy";  also create a AWS key-pair "geodesy" in Web portal
 
 It will be used when you need ssh access into the EC2 box \(Jump, OpenAM or etc\)
 
+`ssh -i ~/.ssh/geodesy.pem ec2-user@ip-xxx-xxx`
+
 ## API Access Key
 
 While creating "geodesy" user, saving the ACCESS_KEY  and SECRETE_\_KEY in your local disk using the profile "geodesy". for more information, refer to AWSCLI
@@ -22,7 +24,7 @@ While creating "geodesy" user, saving the ACCESS_KEY  and SECRETE_\_KEY in your 
 
 It will be used by any AWS Cli commands to authenticate against AWS service endpoints, such as "aws ec2/ s3/ codedeploy/ cloudformation".
 
-## Install following cli on your laptop:
+## Install following cli on laptop:
 
 ---
 
@@ -31,9 +33,9 @@ It will be used by any AWS Cli commands to authenticate against AWS service endp
 * Amazonia
 * Packer & Terraform
 
-### **awscli**
+### a**wscli**
 
-Must do it first and run aws configured --profile geodesy.
+Installs it first and run aws configured --profile geodesy.
 
 \(details is omitted\)
 
@@ -72,17 +74,16 @@ $ credstash setup
 # both of application needs to talk to AWS API endpoints.
 ```
 
-**Amazonia:**
+### **Amazonia:**
 
 ```
 $ cd geodesy-web-services/aws
 $ virtualenv env
 $ . env/bin/activate
 $ python --version
-Python 3.6.3
+Python 3.6.3 (or at least above 3.5.4)
 $ cd amazonia
-$ (cd amazonia && pip install -r requirements.txt -e .)
-$ ./deploy-infa.sh create dev
+$ cd amazonia && pip install -r requirements.txt -e .
 ```
 
 
