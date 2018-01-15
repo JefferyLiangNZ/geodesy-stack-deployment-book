@@ -18,9 +18,11 @@
   * Steps
   * Validations
 * [4. Deploy GNSS-Site-manager and CloudFront](deploy-gnss-site-manager-in-s3-and-config-cloudfront.md)
-  * Steps
-  * Preparations
+  * [Steps](deploy-gnss-site-manager-in-s3-and-config-cloudfront/steps.md)
+  * [Preparations](deploy-gnss-site-manager-in-s3-and-config-cloudfront/preparations.md)
 * [5. Deploy Converter Lambda Func](deploy-gnss-site-manager-in-s3-and-config-cloudfront/preparetions.md)
-  * Steps
-  * [Validations](deploy-gnss-site-manager-in-s3-and-config-cloudfront/preparetions/steps.md)
+  * [Steps](deploy-gnss-site-manager-in-s3-and-config-cloudfront/preparetions/steps.md)
+    * [S3 Buckets & Terraform HCL code](deploy-gnss-site-manager-in-s3-and-config-cloudfront/preparetions/steps/s3-buckets-and-terraform-hcl-code.md)
+    * [Run Terraform](deploy-gnss-site-manager-in-s3-and-config-cloudfront/preparetions/steps/run-terraform-config.md)
+  * [Validations](deploy-gnss-site-manager-in-s3-and-config-cloudfront/preparetions/validations.md)
 
