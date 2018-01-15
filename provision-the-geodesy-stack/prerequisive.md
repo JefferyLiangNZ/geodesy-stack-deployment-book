@@ -1,4 +1,4 @@
-# Configure through web console:
+# web console Configuration 
 
 ---
 
@@ -34,8 +34,6 @@ It will be used by any AWS Cli commands to authenticate against AWS service endp
 * Amazonia
 * Packer & Terraform
 
-
-
 ### Get **geodesy-stack git repo**:
 
 either be installed inside virtualenv or system:
@@ -68,9 +66,7 @@ git checkout <new-deploy-branch-name>
 
 ### a**wscli**
 
-Installs it first and run aws configured --profile geodesy.
-
-\(details is omitted\)
+Installs it first and run aws configured --profile geodesy. Details are omitted.
 
 ### credstash
 
@@ -104,5 +100,7 @@ $ cd amazonia
 $ cd amazonia && pip install -r requirements.txt -e .
 ```
 
+### **Packer & Terraform:**
 
+refer to hashicorp's official document. Download the tool under collect "Arch" \(i386 / x64\)
 
