@@ -24,7 +24,7 @@ While creating "geodesy" user, saving the ACCESS_KEY  and SECRETE_\_KEY in your 
 
 It will be used by any AWS Cli commands to authenticate against AWS service endpoints, such as "aws ec2/ s3/ codedeploy/ cloudformation".
 
-## Install following cli on laptop:
+## Setup cli tools and Geodesy source code:
 
 ---
 
@@ -33,13 +33,13 @@ It will be used by any AWS Cli commands to authenticate against AWS service endp
 * Amazonia
 * Packer & Terraform
 
-### setup a**wscli**
+### a**wscli**
 
 Installs it first and run aws configured --profile geodesy.
 
 \(details is omitted\)
 
-### **coping geodesy-stack git repo**:
+### Get **geodesy-stack git repo**:
 
 either be installed inside virtualenv or system:
 
@@ -69,7 +69,7 @@ git merge the fix
 git checkout <new-deploy-branch-name>
 ```
 
-### install credstash in virtualenv 
+### credstash
 
 **note:** assuming you are using bash; otherwise, zsh/fish needs some alternation\)
 
