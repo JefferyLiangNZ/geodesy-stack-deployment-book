@@ -1,4 +1,4 @@
-# configure through web console:
+# Configure through web console:
 
 ---
 
@@ -16,15 +16,11 @@ While creating "geodesy" user, saving the ACCESS_KEY  and SECRETE_\_KEY in your 
 
 `region=xxx`
 
-`CESS_KEY_ID=xxx`
+`AWS_ACCESS_KEY_ID=xxx`
 
-`AWS_SECRET_ACCESS_KEY = xxx`
+`AWS_SECRET_ACCESS_KEY=xxx`
 
 It will be used by any AWS Cli commands to authenticate against AWS service endpoints, such as "aws ec2/ s3/ codedeploy/ cloudformation".
-
-
-
-
 
 ## Install following cli on your laptop:
 
@@ -37,13 +33,11 @@ It will be used by any AWS Cli commands to authenticate against AWS service endp
 
 ### **awscli**
 
-Must do it first and run aws configured --profile geodesy. 
+Must do it first and run aws configured --profile geodesy.
 
 \(details is omitted\)
 
-
-
-### **credstash**: 
+### **credstash**:
 
 either be installed inside virtualenv or system:
 
@@ -62,7 +56,7 @@ git checkout -b master remotes/origin/master (because the default branch is "nex
 git checkout -b openam-fix remotes/origin/determinsitive-fix
 ```
 
-2. install credstash in virtualenv 
+1. install credstash in virtualenv 
 
 **note:** assuming you are using bash; otherwise, zsh/fish needs some alternation\)
 
