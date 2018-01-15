@@ -28,16 +28,13 @@ It will be used by any AWS Cli commands to authenticate against AWS service endp
 
 ---
 
+* Source Code \(github\)
 * AWSCLI
 * CredStash
 * Amazonia
 * Packer & Terraform
 
-### a**wscli**
 
-Installs it first and run aws configured --profile geodesy.
-
-\(details is omitted\)
 
 ### Get **geodesy-stack git repo**:
 
@@ -68,6 +65,12 @@ git merge the fix
 # No.3 making sure all the rest work are based on <new-deploy-branch-name>
 git checkout <new-deploy-branch-name>
 ```
+
+### a**wscli**
+
+Installs it first and run aws configured --profile geodesy.
+
+\(details is omitted\)
 
 ### credstash
 
