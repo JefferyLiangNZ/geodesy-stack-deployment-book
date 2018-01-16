@@ -1,4 +1,4 @@
-# Codedeploy Role
+# CodeDeploy \(Role\)
 
 | aws iam list-attached-role-policies --role-name CodeDeploy |
 | :--- |
@@ -16,7 +16,6 @@ aws iam get-policy --policy-arn arn:aws:iam::aws:policy/service-role/AWSCodeDepl
         }
     ]
 }
-
 ```
 
 ![](/assets/FireShot Capture 008 - IAM Management _ - https___console.aws.amazon.com_iam_home_#_roles_CodeDeploy.jpg)it is supposed to be assumed by Codedeploy service, the only attachment \("policy"\) is AWSCodeDeployRole.
@@ -49,9 +48,7 @@ aws iam get-policy --policy-arn arn:aws:iam::aws:policy/service-role/AWSCodeDepl
 
 this role's Trusted entities should be **codedeploy.amazonaws.com**
 
-
-
-GeodesyWebServicesD-WebServerRole, 
+# GeodesyWebServicesD-WebServerRole \(Role\)
 
 which is used by EC2 instances \(Jump, Nat\), or AsgLaunchConfig \(OpenAMAsg, GeoserverAsg or WebservicesAsg\) as their IamInstanceProfile
 
@@ -93,8 +90,6 @@ which is used by EC2 instances \(Jump, Nat\), or AsgLaunchConfig \(OpenAMAsg, Ge
     ]
 }
 ```
-
-
 
 
 
