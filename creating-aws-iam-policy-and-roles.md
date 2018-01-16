@@ -170,6 +170,7 @@ When creating that role, select "AWS Service" -&gt; "Lambda" for the step "Selec
 The content of role looks like:
 
 ```
+iam get-role --role-name CredstashReader
 {
     "Role": {
         "Description": "Allows Lambda functions to call AWS services on your behalf.", 

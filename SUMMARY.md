@@ -8,7 +8,7 @@
     * [Creating/importing a certificate into Certificate Manager](creatingimporting-a-certificate-into-certificate-manager.md)
     * [Creating AWS IAM policy & roles](creating-aws-iam-policy-and-roles.md)
     * [Preparing the CFN template](preparing-the-cfn-template.md)
-  * Validations
+  * [Validations](provision-the-geodesy-stack/validations.md)
 * [2. Config and deploy OpenAM](deploy-config-and-code-into-openam-asg.md)
   * [Steps](deploy-config-and-code-into-openam-asg/steps.md)
     * [Reconfigure the deployment code](deploy-config-and-code-into-openam-asg/steps/reconfigure-the-deployment-code.md)
