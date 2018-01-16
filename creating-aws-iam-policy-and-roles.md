@@ -52,9 +52,9 @@ this role's Trusted entities should be **codedeploy.amazonaws.com**
 
 which is used by EC2 instances \(Jump, Nat\), or AsgLaunchConfig \(OpenAMAsg, GeoserverAsg or WebservicesAsg\) as their IamInstanceProfile
 
-| aws iam list-attached-role-policies --role-name GeodesyWebServicesD-WebServerRole |
+|  |
 | :--- |
-
+| aws iam get-role --role-name GeodesyWebServicesD-WebServerRoleaws iam list-attached-role-policies --role-name GeodesyWebServicesD-WebServerRole |
 
 ```
 {
