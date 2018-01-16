@@ -47,11 +47,19 @@
 }
 ```
 
-this role's Trusted entities should be **codedeploy.amazonaws.com**
+Note: This role's Trusted entities should be **codedeploy.amazonaws.com**
+
+
+
+---
 
 # GeodesyWebServicesD-WebServerRole \(Role\)
 
 which is used by EC2 instances \(Jump, Nat\), or AsgLaunchConfig \(OpenAMAsg, GeoserverAsg or WebservicesAsg\) as their IamInstanceProfile
+
+![](/assets/FireShot Capture 009 - IAM Management Console_ - https___console.aws.amazon.com_iam_home.jpg)
+
+
 
 | iam get-role --role-name GeodesyWebServicesD-WebServerRole |
 | :--- |
