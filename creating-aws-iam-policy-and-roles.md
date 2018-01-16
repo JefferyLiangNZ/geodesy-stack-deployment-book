@@ -165,6 +165,10 @@ The content of Policy is copied out as:
 
 # CredstashReader \(Role\)
 
+When creating that role, select "AWS Service" -&gt; "Lambda" for the step "Select type of trusted entity", then choose "Credstash\_Reader" to attach to the new role.
+
+The content of role looks like:
+
 ```
 {
     "Role": {
