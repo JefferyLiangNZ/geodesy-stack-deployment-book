@@ -1,4 +1,4 @@
-# web console Configuration
+# Web console Configuration {#webconfig}
 
 ---
 
@@ -25,8 +25,6 @@ While creating "geodesy" user, saving the ACCESS_KEY  and SECRETE_\_KEY in your 
 `AWS_ACCESS_KEY_ID=xxx`
 
 `AWS_SECRET_ACCESS_KEY=xxx`
-
-
 
 It will be used by any AWS Cli commands to authenticate against AWS service endpoints, such as "aws ec2/ s3/ codedeploy/ cloudformation".
 
