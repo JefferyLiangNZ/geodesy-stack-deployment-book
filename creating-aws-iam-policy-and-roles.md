@@ -13,14 +13,13 @@ Create a role - codedeploy, it is supposed to be assumed by Codedeploy service:
       "Action": "sts:AssumeRole"
     }
   ]
-
 ```
 
-Create a role - GeodesyWebServicesD-WebServerRole
-
-This role is It will be used by EC2 instances \(Nat, Jump\), or by ASG Launch Configuration \(GeoServerAsgLc/WebServiceAsgLc/OpenAMAsgLc\) as their IamInstanceProfile to launch instances. The attachment of this role:
+this role's Trusted entities should be **codedeploy.amazonaws.com**
 
 
+
+Create a role - GeodesyWebServicesD-WebServerRole, which is used by EC2 instances \(Jump, Nat\), or AsgLaunchConfig \(OpenAMAsg, GeoserverAsg or WebservicesAsg\) as their IamInstanceProfile
 
 
 
