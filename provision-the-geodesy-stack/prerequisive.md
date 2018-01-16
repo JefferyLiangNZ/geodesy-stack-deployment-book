@@ -28,7 +28,7 @@ While creating "geodesy" user, saving the ACCESS_KEY  and SECRETE_\_KEY in your 
 
 It will be used by any AWS Cli commands to authenticate against AWS service endpoints, such as "aws ec2/ s3/ codedeploy/ cloudformation".
 
-## Setup cli tools and Geodesy source code:
+## Setup cli tools and Geodesy source code: {#localconfig}
 
 ---
 
