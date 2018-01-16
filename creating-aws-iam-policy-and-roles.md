@@ -1,4 +1,4 @@
-# CodeDeploy \(Role\)
+# CodeDeploy \(Role\) {#codedeploy-role}
 
 | iam list-attached-role-policies --role-name CodeDeploy |
 | :--- |
@@ -51,7 +51,7 @@ Note: This role's Trusted entities should be **codedeploy.amazonaws.com**
 
 ---
 
-# GeodesyWebServicesD-WebServerRole \(Role\)
+# GeodesyWebServicesD-WebServerRole \(Role\) {#geodesywebservicesd-webserverrole}
 
 which is used by EC2 instances \(Jump, Nat\), or AsgLaunchConfig \(OpenAMAsg, GeoserverAsg or WebservicesAsg\) as their IamInstanceProfile
 
@@ -131,9 +131,39 @@ AWSSNSFullAccess
 
 ---
 
-# Credstash\_Reader \(Role\)
+# [Credstash\_Reader](https://console.aws.amazon.com/iam/home?#/policies/arn%3Aaws%3Aiam%3A%3A432193813149%3Apolicy%2FCredstash_Reader) \(self-defined Policy\) {#credstashreader-policy}
 
+Firstly create a new policy as the following, name it as [Credstash\_Reader](https://console.aws.amazon.com/iam/home?#/policies/arn%3Aaws%3Aiam%3A%3A432193813149%3Apolicy%2FCredstash_Reader)![](/assets/FireShot Capture 011 - IAM Management Console - https___console.aws.amazon.com_iam_home_#_policies.jpg)
 
+The content of Policy is copied out as:
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "kms:Decrypt"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:kms:ap-southeast-2:432193813149:key/9244ea52-8465-44d4-85f6-4a23eb083075"
+        },
+        {
+            "Action": [
+                "dynamodb:GetItem",
+                "dynamodb:Query",
+                "dynamodb:Scan"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:dynamodb:ap-southeast-2:432193813149:table/credential-store"
+        }
+    ]
+}
+```
+
+---
+
+# CredstashReader \(Role\)
 
 ```
 {
@@ -158,7 +188,6 @@ AWSSNSFullAccess
         "Arn": "arn:aws:iam::432193813149:role/CredstashReader"
     }
 }
-
 ```
 
 
