@@ -129,5 +129,37 @@ AWSSNSFullAccess
 }
 ```
 
+---
+
+# Credstash\_Reader \(Role\)
+
+
+
+```
+{
+    "Role": {
+        "Description": "Allows Lambda functions to call AWS services on your behalf.", 
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": "sts:AssumeRole", 
+                    "Effect": "Allow", 
+                    "Principal": {
+                        "Service": "lambda.amazonaws.com"
+                    }
+                }
+            ]
+        }, 
+        "RoleId": "AROAIUO5ISJT5JXSZBHFM", 
+        "CreateDate": "2018-01-12T03:03:29Z", 
+        "RoleName": "CredstashReader", 
+        "Path": "/", 
+        "Arn": "arn:aws:iam::432193813149:role/CredstashReader"
+    }
+}
+
+```
+
 
 
